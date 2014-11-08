@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BBF7E804-458D-46B3-A183-84D4E8894375</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TravelMate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>42B613FE-3C94-416C-95F5-19179679AAAA</key>
+		<string>https://github.com/mkokate/TravelMate.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TravelMate/TravelMate.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>42B613FE-3C94-416C-95F5-19179679AAAA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mkokate/TravelMate.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>42B613FE-3C94-416C-95F5-19179679AAAA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>42B613FE-3C94-416C-95F5-19179679AAAA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TravelMate</string>
+		</dict>
+	</array>
+</dict>
+</plist>

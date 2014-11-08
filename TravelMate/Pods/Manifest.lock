@@ -1,0 +1,16 @@
+PODS:
+  - AFNetworking (1.2.0)
+  - iRate (1.10.3)
+  - PKRevealController (2.0.6)
+
+DEPENDENCIES:
+  - AFNetworking (= 1.2)
+  - iRate (~> 1.10.2)
+  - PKRevealController
+
+SPEC CHECKSUMS:
+  AFNetworking: 8dd00f053a0239189e72d2315c026ca9b57ac1c8
+  iRate: 40ebea2bb1e88866cef7393bd0abeae232cc5d38
+  PKRevealController: 4f175a432ad868c806dce1ebb3fd8a35d228bdb5
+
+COCOAPODS: 0.34.1
