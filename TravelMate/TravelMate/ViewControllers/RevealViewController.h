@@ -8,6 +8,6 @@
 
 #import "ZUUIRevealController.h"
 
-@interface RevealViewController : ZUUIRevealController
+@interface RevealViewController : ZUUIRevealController<ZUUIRevealControllerDelegate>
 
 @end
