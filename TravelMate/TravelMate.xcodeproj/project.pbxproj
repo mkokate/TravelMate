@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0E0DE400243210D01E6E03F2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E346681C20FC02D9DE93A58 /* libPods.a */; };
+		3C86A88D1A10E401007F008E /* RevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C86A88C1A10E401007F008E /* RevealViewController.m */; };
+		3C86A8921A10E468007F008E /* ZUUIRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C86A8911A10E468007F008E /* ZUUIRevealController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C86A8951A10E68E007F008E /* FrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C86A8941A10E68E007F008E /* FrontViewController.m */; };
+		3C86A8981A10E699007F008E /* RearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C86A8971A10E699007F008E /* RearViewController.m */; };
 		3CC57CB21A0A82DD00B1B059 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC57CB11A0A82DD00B1B059 /* StartViewController.m */; };
 		3CC57CB51A0A842100B1B059 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC57CB41A0A842100B1B059 /* MainMenuViewController.m */; };
 		3CC57CB81A0A843000B1B059 /* SelectUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC57CB71A0A843000B1B059 /* SelectUserViewController.m */; };
@@ -43,6 +47,15 @@
 
 /* Begin PBXFileReference section */
 		35AD3CF6B5388CF0D41FE89E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3C86A88B1A10E401007F008E /* RevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevealViewController.h; sourceTree = "<group>"; };
+		3C86A88C1A10E401007F008E /* RevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevealViewController.m; sourceTree = "<group>"; };
+		3C86A88F1A10E468007F008E /* ZUUIRevealController-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZUUIRevealController-Prefix.pch"; sourceTree = "<group>"; };
+		3C86A8901A10E468007F008E /* ZUUIRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZUUIRevealController.h; sourceTree = "<group>"; };
+		3C86A8911A10E468007F008E /* ZUUIRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZUUIRevealController.m; sourceTree = "<group>"; };
+		3C86A8931A10E68E007F008E /* FrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontViewController.h; sourceTree = "<group>"; };
+		3C86A8941A10E68E007F008E /* FrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontViewController.m; sourceTree = "<group>"; };
+		3C86A8961A10E699007F008E /* RearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RearViewController.h; sourceTree = "<group>"; };
+		3C86A8971A10E699007F008E /* RearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RearViewController.m; sourceTree = "<group>"; };
 		3CC57CB01A0A82DD00B1B059 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		3CC57CB11A0A82DD00B1B059 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		3CC57CB31A0A842100B1B059 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
@@ -104,6 +117,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C86A88E1A10E468007F008E /* ZUUIRevealController */ = {
+			isa = PBXGroup;
+			children = (
+				3C86A88F1A10E468007F008E /* ZUUIRevealController-Prefix.pch */,
+				3C86A8901A10E468007F008E /* ZUUIRevealController.h */,
+				3C86A8911A10E468007F008E /* ZUUIRevealController.m */,
+			);
+			name = ZUUIRevealController;
+			path = Helpers/ZUUIRevealController;
+			sourceTree = "<group>";
+		};
 		3CC57CB91A0A879200B1B059 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +178,7 @@
 				3CF39DD51A0A8267007FA327 /* Storyboards */,
 				3CF39D9C1A0A8205007FA327 /* Supporting Files */,
 				3CF39DD11A0A825E007FA327 /* ViewControllers */,
+				3C86A88E1A10E468007F008E /* ZUUIRevealController */,
 			);
 			path = TravelMate;
 			sourceTree = "<group>";
@@ -199,6 +224,8 @@
 		3CF39DD11A0A825E007FA327 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C86A8931A10E68E007F008E /* FrontViewController.h */,
+				3C86A8941A10E68E007F008E /* FrontViewController.m */,
 				3CC57CB31A0A842100B1B059 /* MainMenuViewController.h */,
 				3CC57CB41A0A842100B1B059 /* MainMenuViewController.m */,
 				3D96A7AD1A0E98D30040C830 /* PassengerFirstChildController.h */,
@@ -207,6 +234,10 @@
 				3D96A7B11A0E993C0040C830 /* PassengerSecondChildController.m */,
 				3D96A7B31A0E99520040C830 /* PassengerThirdChildController.h */,
 				3D96A7B41A0E99520040C830 /* PassengerThirdChildController.m */,
+				3C86A8961A10E699007F008E /* RearViewController.h */,
+				3C86A8971A10E699007F008E /* RearViewController.m */,
+				3C86A88B1A10E401007F008E /* RevealViewController.h */,
+				3C86A88C1A10E401007F008E /* RevealViewController.m */,
 				3CC57CB61A0A843000B1B059 /* SelectUserViewController.h */,
 				3CC57CB71A0A843000B1B059 /* SelectUserViewController.m */,
 				3CC57CB01A0A82DD00B1B059 /* StartViewController.h */,
@@ -366,7 +397,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C86A8951A10E68E007F008E /* FrontViewController.m in Sources */,
 				3CC57CBC1A0A879200B1B059 /* Utilities.m in Sources */,
+				3C86A8981A10E699007F008E /* RearViewController.m in Sources */,
+				3C86A88D1A10E401007F008E /* RevealViewController.m in Sources */,
 				3D96A7AF1A0E98D30040C830 /* PassengerFirstChildController.m in Sources */,
 				3D96A7B51A0E99520040C830 /* PassengerThirdChildController.m in Sources */,
 				3CC57CB51A0A842100B1B059 /* MainMenuViewController.m in Sources */,
@@ -374,6 +408,7 @@
 				3CF39DD01A0A8250007FA327 /* AppDelegate.m in Sources */,
 				3CF39DA21A0A8205007FA327 /* main.m in Sources */,
 				3D96A7B21A0E993C0040C830 /* PassengerSecondChildController.m in Sources */,
+				3C86A8921A10E468007F008E /* ZUUIRevealController.m in Sources */,
 				3CC57CB81A0A843000B1B059 /* SelectUserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

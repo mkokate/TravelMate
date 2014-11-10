@@ -240,6 +240,9 @@
                                         <state key="normal" title="Get a ride">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="3xr-l7-pSn" kind="custom" identifier="showRevealVC" id="hVX-W5-elp"/>
+                                        </connections>
                                     </button>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HOJ-UT-Ftb">
                                         <rect key="frame" x="34" y="80" width="51" height="31"/>
@@ -302,6 +305,80 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jS0-Ry-WmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2235" y="720"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="YYF-dF-9Le">
+            <objects>
+                <viewController id="3xr-l7-pSn" customClass="RevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I7F-VC-vWc"/>
+                        <viewControllerLayoutGuide type="bottom" id="OHc-wN-oDO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I2X-np-S8Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="NGv-HU-PgR" kind="modal" identifier="ShowFrontVC" id="exK-wI-spq"/>
+                        <segue destination="WBU-N4-DAK" kind="modal" identifier="ShowRearVC" id="sys-FB-eAF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHB-vZ-yug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2612" y="724"/>
+        </scene>
+        <!--Rear View Controller-->
+        <scene sceneID="SrA-da-J9r">
+            <objects>
+                <viewController storyboardIdentifier="RearVC" id="WBU-N4-DAK" customClass="RearViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uCI-So-wjE"/>
+                        <viewControllerLayoutGuide type="bottom" id="xFF-wN-gEp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y28-Mu-msH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rear" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksn-pW-Hes">
+                                <rect key="frame" x="139" y="273" width="36" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EiM-RZ-kde" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3138" y="1036"/>
+        </scene>
+        <!--Front View Controller-->
+        <scene sceneID="aHH-pZ-tp1">
+            <objects>
+                <viewController storyboardIdentifier="FrontVC" id="NGv-HU-PgR" customClass="FrontViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VUP-uB-eFv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wqp-Mg-BlQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y3v-fK-8gY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Front" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfw-9G-0b6">
+                                <rect key="frame" x="141" y="226" width="41" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ku-Sa-tOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3098" y="260"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="y6u-xz-3sq">
