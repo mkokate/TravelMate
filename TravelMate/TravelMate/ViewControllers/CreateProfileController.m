@@ -16,10 +16,7 @@
 
 #pragma mark - Button Methods
 
-- (IBAction)btnBackClicked:(id)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
+
 
 #pragma mark - Textfield Delegate Methods
 
