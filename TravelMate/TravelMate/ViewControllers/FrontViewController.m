@@ -29,7 +29,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIBarButtonItem *barBtn = [[UIBarButtonItem alloc]initWithTitle:@"Reveal" style:UIBarButtonItemStylePlain target:self.navigationController.parentViewController action:@selector(revealToggle:)];
+    UIBarButtonItem *barBtn = [[UIBarButtonItem alloc]initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self.navigationController.parentViewController action:@selector(revealToggle:)];
     self.navigationItem.leftBarButtonItem = barBtn;
 }
 
