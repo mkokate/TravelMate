@@ -7,6 +7,7 @@
 //
 
 #import "StartViewController.h"
+#import "RevealViewController.h"
 
 @interface StartViewController ()
 
@@ -33,7 +34,7 @@
     NSString *userType = [[NSUserDefaults standardUserDefaults] stringForKey:@"UserType"];
     if (isValidString(userType) == YES)
     {
-        [self performSegueWithIdentifier:@"MainMenu" sender:self];
+        [self performSegueWithIdentifier:@"ShowRevealVC" sender:self];
     }
     else
     {
@@ -47,15 +48,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"ShowRevealVC"] == YES)
+    {
+        UIViewController *frontVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FrontVC"];
+        UIViewController *rearVC = [self.storyboard instantiateViewControllerWithIdentifier:@"RearVC"];
+        
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:frontVC];
+        
+        RevealViewController *revealVC = segue.destinationViewController;
+        revealVC.frontViewController = nav;
+        revealVC.rearViewController = rearVC;
+    }
 }
-*/
 
 @end
