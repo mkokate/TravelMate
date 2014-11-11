@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="14A389" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Advertisement" syncable="YES">
+        <attribute name="carID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="intermediate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobileNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serialNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toLocation" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Car" syncable="YES">
+        <attribute name="carID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isAC" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="mobileNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo1ID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo2ID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="City" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="majorCity" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Driver" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dob" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="drivingLicNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobileNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="smoker" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="Passanger" syncable="YES">
+        <attribute name="dob" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="emailID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobileNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Route" syncable="YES">
+        <attribute name="fromLocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="intermediate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="routeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toLocation" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Thumbnail" syncable="YES">
+        <attribute name="photoID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Passanger" positionX="-54" positionY="-9" width="128" height="135"/>
+        <element name="Driver" positionX="-36" positionY="54" width="128" height="180"/>
+        <element name="City" positionX="-18" positionY="117" width="128" height="103"/>
+        <element name="Advertisement" positionX="0" positionY="126" width="128" height="180"/>
+        <element name="Car" positionX="18" positionY="171" width="128" height="165"/>
+        <element name="Thumbnail" positionX="36" positionY="198" width="128" height="75"/>
+        <element name="Route" positionX="-9" positionY="144" width="128" height="105"/>
+    </elements>
+</model>

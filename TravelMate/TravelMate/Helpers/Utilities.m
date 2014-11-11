@@ -72,7 +72,7 @@ NSNumber* numberForObject(id object)
 }
 
 
-NSNumber* numberFromString(NSString *string)
+NSNumber* numberForString(NSString *string)
 {
     if (isValidString(string))
     {

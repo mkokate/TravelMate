@@ -32,7 +32,7 @@ FOUNDATION_EXPORT NSString *const kCompletedStatusForRequest;
 NSArray* arrayFromDictionaryForKey(NSDictionary *parent, NSString *key);
 NSString* stringForObject(id object);
 NSNumber* numberForObject(id object);
-NSNumber* numberFromString(NSString *string);
+NSNumber* numberForString(NSString *string);
 
 BOOL isValidDictionary(NSDictionary *d);
 BOOL isValidArray(NSArray *arr);
