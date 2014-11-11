@@ -8,6 +8,19 @@
 
 #import "PassengerFirstChildController.h"
 
+@interface PassengerFirstChildController ()
+@property (weak, nonatomic) IBOutlet UITextField *txtPickUpAddress;
+@property (weak, nonatomic) IBOutlet UITextField *txtDropAddress;
+
+
+@end
+
 @implementation PassengerFirstChildController
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.inputAccessoryView = [XCDFormInputAccessoryView new];
+}
 
 @end

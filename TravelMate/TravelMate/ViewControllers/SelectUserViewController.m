@@ -48,13 +48,13 @@
 
 - (IBAction)passangerButtonPressed:(id)sender
 {
-    [[NSUserDefaults standardUserDefaults] setObject:@"Passanger" forKey:@"UserType"];
+//    [[NSUserDefaults standardUserDefaults] setObject:@"Passanger" forKey:@"UserType"];
     [self performSegueWithIdentifier:@"MainMenu" sender:self];
 }
 
 - (IBAction)driverButtonPressed:(id)sender
 {
-    [[NSUserDefaults standardUserDefaults] setObject:@"Driver" forKey:@"UserType"];
+//    [[NSUserDefaults standardUserDefaults] setObject:@"Driver" forKey:@"UserType"];
     [self performSegueWithIdentifier:@"MainMenu" sender:self];
 }
 

@@ -16,6 +16,7 @@
 
 #define MR_SHORTHAND
 #import "CoreData+MagicalRecord.h"
+#import "XCDFormInputAccessoryView.h"
 
 #import "Utilities.h"
 #endif

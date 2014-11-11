@@ -10,4 +10,6 @@
 
 @interface PassengerFirstChildController : UIViewController
 
+@property (strong, nonatomic) XCDFormInputAccessoryView *inputAccessoryView;
+
 @end

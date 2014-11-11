@@ -8,6 +8,29 @@
 
 #import "PassengerSecondChildController.h"
 
+@interface PassengerSecondChildController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *txtJorneyDate;
+@property (weak, nonatomic) IBOutlet UITextField *txtJorneyTime;
+
+-(IBAction)openDateAndTimePicker:(UIButton *)sender;
+
+@end
+
 @implementation PassengerSecondChildController
 
+-(IBAction)openDateAndTimePicker:(UIButton *)sender
+{
+    NSInteger tag = sender.tag;
+    switch (tag) {
+        case 1:
+            // Open date picker.
+            break;
+        case 2:
+            //Open time picker.
+            break;
+        default:
+            break;
+    }
+}
 @end

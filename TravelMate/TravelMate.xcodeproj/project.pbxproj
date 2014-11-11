@@ -53,6 +53,7 @@
 		3CC2894A1A127D34001E293F /* Advertisement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC289491A127D34001E293F /* Advertisement.m */; };
 		3CC2894D1A127D34001E293F /* Thumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2894C1A127D34001E293F /* Thumbnail.m */; };
 		3CC289501A127D34001E293F /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2894F1A127D34001E293F /* City.m */; };
+		3CC289541A128295001E293F /* XCDFormInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC289531A128295001E293F /* XCDFormInputAccessoryView.m */; };
 		3CC57CB21A0A82DD00B1B059 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC57CB11A0A82DD00B1B059 /* StartViewController.m */; };
 		3CC57CB51A0A842100B1B059 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC57CB41A0A842100B1B059 /* MainMenuViewController.m */; };
 		3CC57CB81A0A843000B1B059 /* SelectUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC57CB71A0A843000B1B059 /* SelectUserViewController.m */; };
@@ -179,6 +180,8 @@
 		3CC2894C1A127D34001E293F /* Thumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Thumbnail.m; path = Model/Thumbnail.m; sourceTree = "<group>"; };
 		3CC2894E1A127D34001E293F /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = City.h; path = Model/City.h; sourceTree = "<group>"; };
 		3CC2894F1A127D34001E293F /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = City.m; path = Model/City.m; sourceTree = "<group>"; };
+		3CC289521A128295001E293F /* XCDFormInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCDFormInputAccessoryView.h; sourceTree = "<group>"; };
+		3CC289531A128295001E293F /* XCDFormInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCDFormInputAccessoryView.m; sourceTree = "<group>"; };
 		3CC57CB01A0A82DD00B1B059 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		3CC57CB11A0A82DD00B1B059 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		3CC57CB31A0A842100B1B059 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
@@ -383,9 +386,19 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		3CC289511A128295001E293F /* XCDFormInputAccessoryView */ = {
+			isa = PBXGroup;
+			children = (
+				3CC289521A128295001E293F /* XCDFormInputAccessoryView.h */,
+				3CC289531A128295001E293F /* XCDFormInputAccessoryView.m */,
+			);
+			path = XCDFormInputAccessoryView;
+			sourceTree = "<group>";
+		};
 		3CC57CB91A0A879200B1B059 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				3CC289511A128295001E293F /* XCDFormInputAccessoryView */,
 				3CC288E21A12775D001E293F /* MagicalRecord */,
 				3C86A88E1A10E468007F008E /* ZUUIRevealController */,
 				3CC57CBA1A0A879200B1B059 /* Utilities.h */,
@@ -680,6 +693,7 @@
 				3C86A8981A10E699007F008E /* RearViewController.m in Sources */,
 				3CC289501A127D34001E293F /* City.m in Sources */,
 				3C86A88D1A10E401007F008E /* RevealViewController.m in Sources */,
+				3CC289541A128295001E293F /* XCDFormInputAccessoryView.m in Sources */,
 				3CC289221A12775D001E293F /* NSObject+MagicalDataImport.m in Sources */,
 				3CC2893E1A127D33001E293F /* Driver.m in Sources */,
 				3CC289301A12775D001E293F /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,

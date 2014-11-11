@@ -268,6 +268,10 @@
                             <constraint firstItem="Kfu-zx-KWC" firstAttribute="leading" secondItem="VBh-ev-Vnv" secondAttribute="leading" constant="34" id="zkq-qp-94U"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtDropAddress" destination="Kfu-zx-KWC" id="Ff1-Ua-uhU"/>
+                        <outlet property="txtPickUpAddress" destination="F7Y-V9-8AF" id="9Yi-jA-lmj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JGf-8n-imj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -304,6 +308,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button appearanceType="aqua" opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sw1-2s-Goq" userLabel="DatePicker">
+                                <rect key="frame" x="34" y="160" width="252" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openDateAndTimePicker:" destination="U3T-ap-C4g" eventType="touchUpInside" id="0La-uo-2S3"/>
+                                </connections>
+                            </button>
+                            <button appearanceType="aqua" opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV1-Wc-Qzj" userLabel="TimePicker">
+                                <rect key="frame" x="34" y="220" width="252" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openDateAndTimePicker:" destination="U3T-ap-C4g" eventType="touchUpInside" id="3H9-Eu-Scm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -318,6 +342,10 @@
                             <constraint firstItem="Waf-eb-Fxo" firstAttribute="leading" secondItem="weS-sG-cZv" secondAttribute="leading" constant="34" id="wDU-ng-UVG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtJorneyDate" destination="Prs-5o-Wgk" id="ZFX-VO-hyp"/>
+                        <outlet property="txtJorneyTime" destination="Waf-eb-Fxo" id="GWj-K1-AbS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQO-yh-Eqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -335,26 +363,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONAL DETAILS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4I-r7-XzO">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PERSONAL DETAILS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4I-r7-XzO">
                                 <rect key="frame" x="79" y="77" width="162" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-dg-TiY">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-dg-TiY">
                                 <rect key="frame" x="34" y="128" width="252" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Phone no" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e23-I2-QCD">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Phone no" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e23-I2-QCD">
                                 <rect key="frame" x="34" y="188" width="252" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gld-0Z-1td">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gld-0Z-1td">
                                 <rect key="frame" x="0.0" y="248" width="320" height="264"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -365,9 +393,12 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Djq-Hv-PG2">
+                                    <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Djq-Hv-PG2">
                                         <rect key="frame" x="34" y="158" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="switchValueChanged:" destination="QNf-nw-JnZ" eventType="valueChanged" id="N7T-lo-5ga"/>
+                                        </connections>
                                     </switch>
                                     <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCE-AX-PTg">
                                         <rect key="frame" x="20" y="214" width="280" height="30"/>
@@ -379,9 +410,12 @@
                                             <segue destination="3xr-l7-pSn" kind="custom" identifier="showRevealVC" id="hVX-W5-elp"/>
                                         </connections>
                                     </button>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HOJ-UT-Ftb">
+                                    <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HOJ-UT-Ftb">
                                         <rect key="frame" x="34" y="80" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="switchValueChanged:" destination="QNf-nw-JnZ" eventType="valueChanged" id="9Lp-5y-dGA"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A/C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f30-oy-ByT">
                                         <rect key="frame" x="91" y="85" width="30" height="21"/>
@@ -389,9 +423,12 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WuZ-gd-p0F">
+                                    <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WuZ-gd-p0F">
                                         <rect key="frame" x="199" y="158" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="switchValueChanged:" destination="QNf-nw-JnZ" eventType="valueChanged" id="VVe-I6-FN1"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xP-pr-wOA">
                                         <rect key="frame" x="256" y="163" width="47" height="21"/>
@@ -405,9 +442,12 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oiq-3D-6Hn">
+                                    <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oiq-3D-6Hn">
                                         <rect key="frame" x="199" y="80" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="switchValueChanged:" destination="QNf-nw-JnZ" eventType="valueChanged" id="qQS-Ym-lNP"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Io9-Cr-Xey">
                                         <rect key="frame" x="91" y="163" width="57" height="21"/>
@@ -420,22 +460,15 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="gld-0Z-1td" firstAttribute="top" secondItem="e23-I2-QCD" secondAttribute="bottom" constant="30" id="Kop-Ne-QKA"/>
-                            <constraint firstItem="x4I-r7-XzO" firstAttribute="leading" secondItem="dmZ-AY-HaW" secondAttribute="leading" constant="79" id="LPx-XZ-kD6"/>
-                            <constraint firstAttribute="trailing" secondItem="gld-0Z-1td" secondAttribute="trailing" id="NZ2-WY-vMS"/>
-                            <constraint firstAttribute="trailing" secondItem="Pdc-dg-TiY" secondAttribute="trailing" constant="34" id="Qeg-At-zO7"/>
-                            <constraint firstAttribute="trailing" secondItem="x4I-r7-XzO" secondAttribute="trailing" constant="79" id="WwY-Mq-mSq"/>
-                            <constraint firstItem="gld-0Z-1td" firstAttribute="leading" secondItem="dmZ-AY-HaW" secondAttribute="leading" id="ZaP-Yr-nqe"/>
-                            <constraint firstItem="Pdc-dg-TiY" firstAttribute="top" secondItem="x4I-r7-XzO" secondAttribute="bottom" constant="30" id="d2y-NO-vBO"/>
-                            <constraint firstItem="G7y-fA-Klc" firstAttribute="top" secondItem="gld-0Z-1td" secondAttribute="bottom" constant="56" id="fgg-xV-Wzo"/>
-                            <constraint firstItem="e23-I2-QCD" firstAttribute="top" secondItem="Pdc-dg-TiY" secondAttribute="bottom" constant="30" id="fhp-UQ-RiY"/>
-                            <constraint firstItem="e23-I2-QCD" firstAttribute="leading" secondItem="dmZ-AY-HaW" secondAttribute="leading" constant="34" id="jdG-Xd-fJR"/>
-                            <constraint firstItem="Pdc-dg-TiY" firstAttribute="leading" secondItem="dmZ-AY-HaW" secondAttribute="leading" constant="34" id="l9n-GW-Kod"/>
-                            <constraint firstItem="x4I-r7-XzO" firstAttribute="top" secondItem="J2F-C5-GIm" secondAttribute="bottom" constant="57" id="rfE-t5-kL3"/>
-                            <constraint firstAttribute="trailing" secondItem="e23-I2-QCD" secondAttribute="trailing" constant="34" id="vsT-ZM-xDH"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="switchAC" destination="HOJ-UT-Ftb" id="nrM-cs-6ZG"/>
+                        <outlet property="switchGender" destination="Djq-Hv-PG2" id="gZd-nz-tmu"/>
+                        <outlet property="switchMusic" destination="WuZ-gd-p0F" id="75J-Fc-DfK"/>
+                        <outlet property="switchSmoker" destination="oiq-3D-6Hn" id="oSY-Yy-GSY"/>
+                        <outlet property="txtEmailID" destination="Pdc-dg-TiY" id="G0N-Bi-gYD"/>
+                        <outlet property="txtPhoneNo" destination="e23-I2-QCD" id="YkJ-sY-3ru"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jS0-Ry-WmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
