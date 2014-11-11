@@ -46,6 +46,13 @@
 		3CC289361A12775D001E293F /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC289191A12775D001E293F /* MagicalRecord+ShorthandSupport.m */; };
 		3CC289371A12775D001E293F /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2891B1A12775D001E293F /* MagicalRecord.m */; };
 		3CC2893A1A127840001E293F /* TravelMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CC289381A127840001E293F /* TravelMate.xcdatamodeld */; };
+		3CC2893E1A127D33001E293F /* Driver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2893D1A127D33001E293F /* Driver.m */; };
+		3CC289411A127D33001E293F /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC289401A127D33001E293F /* Car.m */; };
+		3CC289441A127D33001E293F /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC289431A127D33001E293F /* Route.m */; };
+		3CC289471A127D34001E293F /* Passanger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC289461A127D34001E293F /* Passanger.m */; };
+		3CC2894A1A127D34001E293F /* Advertisement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC289491A127D34001E293F /* Advertisement.m */; };
+		3CC2894D1A127D34001E293F /* Thumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2894C1A127D34001E293F /* Thumbnail.m */; };
+		3CC289501A127D34001E293F /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2894F1A127D34001E293F /* City.m */; };
 		3CC57CB21A0A82DD00B1B059 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC57CB11A0A82DD00B1B059 /* StartViewController.m */; };
 		3CC57CB51A0A842100B1B059 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC57CB41A0A842100B1B059 /* MainMenuViewController.m */; };
 		3CC57CB81A0A843000B1B059 /* SelectUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC57CB71A0A843000B1B059 /* SelectUserViewController.m */; };
@@ -158,6 +165,20 @@
 		3CC2891C1A12775D001E293F /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		3CC2891D1A12775D001E293F /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		3CC289391A127840001E293F /* TravelMate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelMate.xcdatamodel; sourceTree = "<group>"; };
+		3CC2893C1A127D33001E293F /* Driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Driver.h; path = Model/Driver.h; sourceTree = "<group>"; };
+		3CC2893D1A127D33001E293F /* Driver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Driver.m; path = Model/Driver.m; sourceTree = "<group>"; };
+		3CC2893F1A127D33001E293F /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = Model/Car.h; sourceTree = "<group>"; };
+		3CC289401A127D33001E293F /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Car.m; path = Model/Car.m; sourceTree = "<group>"; };
+		3CC289421A127D33001E293F /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Route.h; path = Model/Route.h; sourceTree = "<group>"; };
+		3CC289431A127D33001E293F /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Route.m; path = Model/Route.m; sourceTree = "<group>"; };
+		3CC289451A127D34001E293F /* Passanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Passanger.h; path = Model/Passanger.h; sourceTree = "<group>"; };
+		3CC289461A127D34001E293F /* Passanger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Passanger.m; path = Model/Passanger.m; sourceTree = "<group>"; };
+		3CC289481A127D34001E293F /* Advertisement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Advertisement.h; path = Model/Advertisement.h; sourceTree = "<group>"; };
+		3CC289491A127D34001E293F /* Advertisement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Advertisement.m; path = Model/Advertisement.m; sourceTree = "<group>"; };
+		3CC2894B1A127D34001E293F /* Thumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Thumbnail.h; path = Model/Thumbnail.h; sourceTree = "<group>"; };
+		3CC2894C1A127D34001E293F /* Thumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Thumbnail.m; path = Model/Thumbnail.m; sourceTree = "<group>"; };
+		3CC2894E1A127D34001E293F /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = City.h; path = Model/City.h; sourceTree = "<group>"; };
+		3CC2894F1A127D34001E293F /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = City.m; path = Model/City.m; sourceTree = "<group>"; };
 		3CC57CB01A0A82DD00B1B059 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		3CC57CB11A0A82DD00B1B059 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		3CC57CB31A0A842100B1B059 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
@@ -343,6 +364,20 @@
 		3CC2893B1A127848001E293F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3CC289481A127D34001E293F /* Advertisement.h */,
+				3CC289491A127D34001E293F /* Advertisement.m */,
+				3CC2893F1A127D33001E293F /* Car.h */,
+				3CC289401A127D33001E293F /* Car.m */,
+				3CC2894E1A127D34001E293F /* City.h */,
+				3CC2894F1A127D34001E293F /* City.m */,
+				3CC2893C1A127D33001E293F /* Driver.h */,
+				3CC2893D1A127D33001E293F /* Driver.m */,
+				3CC289451A127D34001E293F /* Passanger.h */,
+				3CC289461A127D34001E293F /* Passanger.m */,
+				3CC289421A127D33001E293F /* Route.h */,
+				3CC289431A127D33001E293F /* Route.m */,
+				3CC2894B1A127D34001E293F /* Thumbnail.h */,
+				3CC2894C1A127D34001E293F /* Thumbnail.m */,
 				3CC289381A127840001E293F /* TravelMate.xcdatamodeld */,
 			);
 			name = Model;
@@ -633,15 +668,20 @@
 			files = (
 				3CC2892D1A12775D001E293F /* NSManagedObjectContext+MagicalThreading.m in Sources */,
 				3CC2893A1A127840001E293F /* TravelMate.xcdatamodeld in Sources */,
+				3CC2894D1A127D34001E293F /* Thumbnail.m in Sources */,
 				3C86A8951A10E68E007F008E /* FrontViewController.m in Sources */,
 				3CC289231A12775D001E293F /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				3CC57CBC1A0A879200B1B059 /* Utilities.m in Sources */,
 				3CC289251A12775D001E293F /* NSManagedObject+MagicalAggregation.m in Sources */,
+				3CC289441A127D33001E293F /* Route.m in Sources */,
+				3CC289411A127D33001E293F /* Car.m in Sources */,
 				3CC2892F1A12775D001E293F /* NSPersistentStore+MagicalRecord.m in Sources */,
 				3C86A8B21A112AB3007F008E /* RateViewController.m in Sources */,
 				3C86A8981A10E699007F008E /* RearViewController.m in Sources */,
+				3CC289501A127D34001E293F /* City.m in Sources */,
 				3C86A88D1A10E401007F008E /* RevealViewController.m in Sources */,
 				3CC289221A12775D001E293F /* NSObject+MagicalDataImport.m in Sources */,
+				3CC2893E1A127D33001E293F /* Driver.m in Sources */,
 				3CC289301A12775D001E293F /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				3CC2891E1A12775D001E293F /* MagicalImportFunctions.m in Sources */,
 				3CC2891F1A12775D001E293F /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -650,6 +690,7 @@
 				3CC289201A12775D001E293F /* NSEntityDescription+MagicalDataImport.m in Sources */,
 				3D96A7AF1A0E98D30040C830 /* PassengerFirstChildController.m in Sources */,
 				3C86A8AC1A112A8B007F008E /* MyBookingsViewController.m in Sources */,
+				3CC2894A1A127D34001E293F /* Advertisement.m in Sources */,
 				3D96A7B51A0E99520040C830 /* PassengerThirdChildController.m in Sources */,
 				3CC2892B1A12775D001E293F /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				3CC289281A12775D001E293F /* NSManagedObject+MagicalRecord.m in Sources */,
@@ -674,6 +715,7 @@
 				3C86A8921A10E468007F008E /* ZUUIRevealController.m in Sources */,
 				3CC289261A12775D001E293F /* NSManagedObject+MagicalDataImport.m in Sources */,
 				3C86A8AF1A112A9F007F008E /* ShareViewController.m in Sources */,
+				3CC289471A127D34001E293F /* Passanger.m in Sources */,
 				3CC57CB81A0A843000B1B059 /* SelectUserViewController.m in Sources */,
 				3CC289321A12775D001E293F /* MagicalRecord+ErrorHandling.m in Sources */,
 				3CC289331A12775D001E293F /* MagicalRecord+iCloud.m in Sources */,
