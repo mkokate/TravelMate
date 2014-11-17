@@ -80,7 +80,8 @@
 		// Now let's see if we're not attempting to swap the current frontViewController for a new instance of ITSELF, which'd be highly redundant.
 		if ([revealController.frontViewController isKindOfClass:[UINavigationController class]] && ![((UINavigationController *)revealController.frontViewController).topViewController isKindOfClass:[FrontViewController class]])
 		{
-			FrontViewController *frontViewController = [[FrontViewController alloc] init];
+			FrontViewController *frontViewController = (FrontViewController *)[storyboard
+                                                                                 instantiateViewControllerWithIdentifier:@"FrontVC"];
 			UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:frontViewController];
 			[revealController setFrontViewController:navigationController animated:NO];
 			
