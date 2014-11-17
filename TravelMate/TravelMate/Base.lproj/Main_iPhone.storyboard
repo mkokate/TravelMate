@@ -30,7 +30,7 @@
         <!--Profile View Controller-->
         <scene sceneID="IAO-fR-EQk">
             <objects>
-                <viewController id="xGa-OK-fWP" customClass="ProfileViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="xGa-OK-fWP" customClass="ProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dKu-O4-fZv"/>
                         <viewControllerLayoutGuide type="bottom" id="TQJ-CE-iCL"/>
@@ -56,7 +56,7 @@
         <!--My Bookings View Controller-->
         <scene sceneID="2vY-3e-Hbc">
             <objects>
-                <viewController id="HHj-ki-s0Q" customClass="MyBookingsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyBookingsViewController" id="HHj-ki-s0Q" customClass="MyBookingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F8u-Id-PzN"/>
                         <viewControllerLayoutGuide type="bottom" id="fHA-Lv-eNC"/>
@@ -82,7 +82,7 @@
         <!--Share View Controller-->
         <scene sceneID="VeF-bI-PEi">
             <objects>
-                <viewController id="Qb4-HB-Q9l" customClass="ShareViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShareViewController" id="Qb4-HB-Q9l" customClass="ShareViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JAA-cL-Xde"/>
                         <viewControllerLayoutGuide type="bottom" id="RqU-AZ-dza"/>
@@ -108,7 +108,7 @@
         <!--Rate View Controller-->
         <scene sceneID="DpG-aW-yL7">
             <objects>
-                <viewController id="ja5-yn-wOE" customClass="RateViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RateViewController" id="ja5-yn-wOE" customClass="RateViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IS7-uW-Kec"/>
                         <viewControllerLayoutGuide type="bottom" id="Fg4-pF-YM8"/>
@@ -134,7 +134,7 @@
         <!--Report Abuse View Controller-->
         <scene sceneID="srb-Wk-pVL">
             <objects>
-                <viewController id="Ldj-V2-Chf" customClass="ReportAbuseViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReportAbuseViewController" id="Ldj-V2-Chf" customClass="ReportAbuseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="beV-oV-a9N"/>
                         <viewControllerLayoutGuide type="bottom" id="lRc-E1-gnj"/>
@@ -149,11 +149,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nV3-CL-H3Q">
-                                <rect key="frame" x="20" y="20" width="285" height="528"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.25490196079999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

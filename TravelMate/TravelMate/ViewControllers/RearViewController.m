@@ -72,6 +72,9 @@
 {
     // Grab a handle to the reveal controller, as if you'd do with a navigtion controller via self.navigationController.
 	RevealViewController *revealController = [self.parentViewController isKindOfClass:[RevealViewController class]] ? (RevealViewController *)self.parentViewController : nil;
+    
+    UIStoryboard *storyboard =
+    [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
     if (indexPath.row == 0)
 	{
 		// Now let's see if we're not attempting to swap the current frontViewController for a new instance of ITSELF, which'd be highly redundant.
@@ -92,9 +95,16 @@
 	{
 		if ([revealController.frontViewController isKindOfClass:[UINavigationController class]] && ![((UINavigationController *)revealController.frontViewController).topViewController isKindOfClass:[ProfileViewController class]])
 		{
-			ProfileViewController *profileViewController = [[ProfileViewController alloc] init];
-			UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:profileViewController];
-			[revealController setFrontViewController:navigationController animated:NO];
+            
+            ProfileViewController *frontViewController =
+            (ProfileViewController *)[storyboard
+                                      instantiateViewControllerWithIdentifier:@"ProfileViewController"];
+            UINavigationController *navigationController =
+            [[UINavigationController alloc]
+             initWithRootViewController:frontViewController];
+            [revealController setFrontViewController:navigationController
+                                            animated:NO];
+            
 		}
 		// Seems the user attempts to 'switch' to exactly the same controller he came from!
 		else
@@ -106,7 +116,8 @@
 	{
         if ([revealController.frontViewController isKindOfClass:[UINavigationController class]] && ![((UINavigationController *)revealController.frontViewController).topViewController isKindOfClass:[MyBookingsViewController class]])
 		{
-			MyBookingsViewController *viewController = [[MyBookingsViewController alloc] init];
+			MyBookingsViewController *viewController = (MyBookingsViewController *)[storyboard
+                                                                                    instantiateViewControllerWithIdentifier:@"MyBookingsViewController"];
 			UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
 			[revealController setFrontViewController:navigationController animated:NO];
 		}
@@ -120,7 +131,8 @@
 	{
         if ([revealController.frontViewController isKindOfClass:[UINavigationController class]] && ![((UINavigationController *)revealController.frontViewController).topViewController isKindOfClass:[ShareViewController class]])
 		{
-			ShareViewController *viewController = [[ShareViewController alloc] init];
+			ShareViewController *viewController = (ShareViewController *)[storyboard
+                                                                          instantiateViewControllerWithIdentifier:@"ShareViewController"];
 			UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
 			[revealController setFrontViewController:navigationController animated:NO];
 		}
@@ -134,7 +146,8 @@
 	{
         if ([revealController.frontViewController isKindOfClass:[UINavigationController class]] && ![((UINavigationController *)revealController.frontViewController).topViewController isKindOfClass:[RateViewController class]])
 		{
-			RateViewController *viewController = [[RateViewController alloc] init];
+			RateViewController *viewController = (RateViewController *)[storyboard
+                                                                        instantiateViewControllerWithIdentifier:@"RateViewController"];
 			UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
 			[revealController setFrontViewController:navigationController animated:NO];
 		}
@@ -148,7 +161,8 @@
 	{
         if ([revealController.frontViewController isKindOfClass:[UINavigationController class]] && ![((UINavigationController *)revealController.frontViewController).topViewController isKindOfClass:[ReportAbuseViewController class]])
 		{
-			ReportAbuseViewController *viewController = [[ReportAbuseViewController alloc] init];
+			ReportAbuseViewController *viewController = (ReportAbuseViewController *)[storyboard
+                                                                                      instantiateViewControllerWithIdentifier:@"ReportAbuseViewController"];
 			UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
 			[revealController setFrontViewController:navigationController animated:NO];
 		}
